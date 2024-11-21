@@ -1,8 +1,7 @@
 
-
 // Three types of variables they are 
 
-// const, let, var *****  
+// const, let, var *****
 var name = "ranjith";
 console.log(name);
 
