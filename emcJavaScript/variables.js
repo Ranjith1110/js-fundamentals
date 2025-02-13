@@ -8,10 +8,10 @@
 
 var a = 10;
 {
-    var b = 20;
+    // var b = 20;
 }
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 // Output : 20; (accessible outside and inside the block);
 
 
@@ -19,9 +19,8 @@ console.log(b);
 {
     let x = 10;
     // console.log(x);
-    
 }
-console.log(x);
+// console.log(x);
 // let can't be used here only insde the parentheses
 
 // Using (const) keyword - Block scope (const is constant value)
@@ -29,4 +28,30 @@ console.log(x);
 
 // const keyword can't do this
 const num = 10;
-num = 10;
+// num = 10;
+
+
+// Example Task
+/*
+let price = 100;
+let product = "Rice";
+let tax = 20;
+console.log(product);
+
+let total = price + tax;
+console.log(total);
+*/
+
+/*
+let FruitName = "Apple";
+let count = 10;
+let price = 250;
+let total = count*price;
+console.log(FruitName);
+console.log(total);
+*/
+
+// Increment operator
+let apple = 100;
+let b = ++apple;
+console.log(b);
