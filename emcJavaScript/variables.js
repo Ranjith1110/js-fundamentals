@@ -51,7 +51,63 @@ console.log(FruitName);
 console.log(total);
 */
 
-// Increment operator
+// Operators
+// Increment operator ++
+// Decrement operator --
 let apple = 100;
-let b = ++apple;
-console.log(b);
+// let b = apple++;
+// console.log(b);
+
+// Data Type
+// console.log(typeof(10)); Number
+// console.log(typeof("Apple")); String
+// console.log(typeof(true)); Boolean
+
+// Function
+
+function iphone(){
+    console.log("This is Iphone");
+}
+// iphone();
+function redmi(){
+    console.log("This is Redmi");
+}
+// redmi();
+function oppo(){
+    console.log("This is Oppo");
+}
+// oppo();
+
+
+var a = 10;
+var b = 20;
+function add() {
+    console.log(a+b);
+}
+// add();
+
+// Exercise
+var factor = "Kamal";
+var fplayer = "Fav Player : Dhoni";
+var fmovie = "Fav Movie :";
+
+function fav(){
+    console.log("Fav Actor :", factor);
+    console.log(fplayer);
+    console.log(fmovie, "Anbe Shivam");
+}
+// fav();
+
+// Parameters
+function area(lenght, breadth){
+    console.log(lenght*breadth);
+}
+// area(20,15);
+
+// Return Type
+function add(a, b){
+    return a*b
+}
+// var total = add(10, 20);
+// console.log(total);
+
