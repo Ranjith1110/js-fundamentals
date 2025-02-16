@@ -65,15 +65,15 @@ let apple = 100;
 
 // Function
 
-function iphone(){
+function iphone() {
     console.log("This is Iphone");
 }
 // iphone();
-function redmi(){
+function redmi() {
     console.log("This is Redmi");
 }
 // redmi();
-function oppo(){
+function oppo() {
     console.log("This is Oppo");
 }
 // oppo();
@@ -82,7 +82,7 @@ function oppo(){
 var a = 10;
 var b = 20;
 function add() {
-    console.log(a+b);
+    console.log(a + b);
 }
 // add();
 
@@ -91,7 +91,7 @@ var factor = "Kamal";
 var fplayer = "Fav Player : Dhoni";
 var fmovie = "Fav Movie :";
 
-function fav(){
+function fav() {
     console.log("Fav Actor :", factor);
     console.log(fplayer);
     console.log(fmovie, "Anbe Shivam");
@@ -99,15 +99,107 @@ function fav(){
 // fav();
 
 // Parameters
-function area(lenght, breadth){
-    console.log(lenght*breadth);
+function area(lenght, breadth) {
+    console.log(lenght * breadth);
 }
 // area(20,15);
 
 // Return Type
-function add(a, b){
-    return a*b
+function add(a, b) {
+    return a * b
 }
 // var total = add(10, 20);
 // console.log(total);
 
+// If else statements
+/*
+var rain = false;
+
+if(rain){
+    console.log("Take an Umberlla");
+} else{
+    console.log("Enjoy Sunshine");
+}
+*/
+
+/*
+var homeWork = true;
+
+if(homeWork){
+    console.log("Great Job");
+} else{
+    console.log("Finish the homework before playing");
+}
+*/
+
+/*
+var cookies = false;
+
+if(cookies){
+    console.log("Would you like cookies?");
+} else{
+    console.log("Time to bake more cookies");
+}
+*/
+
+/*
+var brush = true;
+
+if(brush){
+    console.log("Your teeth are clean");
+} else {
+    console.log("Go and brush your teeth");
+}
+*/
+
+/*
+var birthDay = false;
+
+if(birthDay) {
+    console.log("Happy Birthday!");
+} else {
+    console.log("Have a great day");
+}
+*/
+
+/*
+var season = "summer";
+
+if (season == "spring") {
+    console.log("Enjoy the blowing flowers");
+}
+if (season == "summer") {
+    console.log("Have fun in summer");
+}
+if (season == "autumn") {
+    console.log("Admire the colorful leaves");
+}
+if (season == "winter") {
+    console.log("Bundle up and stay warm");
+}
+*/
+
+// odd or even number
+
+/*
+var number = 3;
+
+if (number % 2 === 0){
+    console.log(number + " is an even");
+} else {
+    console.log(number + " is an odd");
+}
+*/
+
+/*
+var letter = "F";
+letter = letter.toUpperCase();
+
+if (letter === "A" || letter === "E" || letter === "I" || letter === "o" || letter === "u") {
+    console.log(letter + " is an vowel.");
+} else {
+    console.log(letter + " is a consonant.");
+}
+*/
+
+// For Loop
