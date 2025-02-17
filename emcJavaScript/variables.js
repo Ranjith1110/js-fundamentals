@@ -203,3 +203,41 @@ if (letter === "A" || letter === "E" || letter === "I" || letter === "o" || lett
 */
 
 // For Loop
+/*
+for(bucket = 0; bucket <= 5; bucket++) {
+    console.log("Rainbow");
+}
+*/
+/*
+for (count = 0; count <= 10; count++) {
+    console.log(count);
+}
+*/
+
+for (count = 0; count <= 10; count++) {
+    console.log(count+"x2"+ "=" + count*2);
+}
+
+/*
+for (count = 10; count >= 0; count--) {
+    console.log(count);
+}
+*/
+
+/*
+for (count = 0; count <= 10; count++) {
+    if (count % 2 === 0) {
+        console.log(count);
+    } else{
+        console.log("Odd Number");
+        
+    }
+}
+*/
+/*
+for (count = 1; count <= 10; count += 3) {
+    console.log(count);
+}
+*/
+
+
