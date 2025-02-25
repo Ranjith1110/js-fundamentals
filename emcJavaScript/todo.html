@@ -7,5 +7,44 @@
 </head>
 <body>
     
+    <input type="text" id="input" placeholder="Enter text">
+    <button id="addtodo">Add</button>
+
+    <ul id="listitem">
+        <li>
+            <span>Hey</span>
+            <button onclick="deleteItem(this)">Delete</button>
+        </li>
+    </ul>
+
+    <script>
+        var input = document.getElementById('input');
+        var addtodo = document.getElementById('addtodo');
+        var listitem = document.getElementById('listitem');
+
+        addtodo.addEventListener('click', function() {
+            var listitems = document.createElement('li');
+            var span = document.createElement('span');
+            var button = document.createElement('button');
+
+            span.textContent = input.value;
+            button.textContent = 'Delete';
+            button.onclick = function() {
+                listitem.removeChild(listitems);
+            };
+
+            listitems.appendChild(span);
+            listitems.appendChild(button);
+            listitem.appendChild(listitems);
+
+            input.value = '';
+        });
+
+        function deleteItem(button) {
+            var li = button.parentElement;
+            listitem.removeChild(li);
+        }
+    </script>
+
 </body>
 </html>
