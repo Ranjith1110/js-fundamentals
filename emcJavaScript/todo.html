@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo - List</title>
 </head>
-<body>
-    
-    <input type="text" id="input" placeholder="Enter text">
-    <button id="addtodo">Add</button>
 
-    <ul id="listitem">
-        <li style="display: none;">
-            <span>Hey</span>
-            <button onclick="deleteItem(this)">Delete</button>
-        </li>
-    </ul>
+<body>
+
+    <div>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Enter Age">
+    </div>
+    <div>
+        <label>Gender</label>
+        <div>
+            <input id="male" type="radio" name="gender" value="Male">
+            <span>Male</span>
+        </div>
+        <div>
+            <input id="female" type="radio" name="gender" value="Female">
+            <span>Female</span>
+        </div>
+    </div>
+    <div>
+        <label>Course</label>
+        <input type="text" id="course" placeholder="Enter Course">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+    </div>
+
+    <button id="add">Add</button>
+
+    <ul id="listitem"></ul>
 
     <script>
-        
-        var input = document.getElementById('input');
-        var addtodo = document.getElementById('addtodo');
+        var nameInput = document.getElementById('name');
+        var ageInput = document.getElementById('age');
+        var courseInput = document.getElementById('course');
+        var emailInput = document.getElementById('email');
+        var addButton = document.getElementById('add');
         var listitem = document.getElementById('listitem');
-        
-        addtodo.addEventListener('click', function(){
+
+        addButton.addEventListener('click', function () {
+            var name = nameInput.value;
+            var age = ageInput.value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var course = courseInput.value;
+            var email = emailInput.value;
+
             var li = document.createElement('li');
-            var span = document.createElement('span');
-            var button = document.createElement('button');
+            li.innerHTML = `Name: ${name}, Age: ${age}, Gender: ${gender}, Course: ${course}, Email: ${email} <button onclick="deleteItem(this)">Delete</button>`;
+            listitem.appendChild(li);
 
-            span.innerText = input.value;
-            button.innerText = 'Delete';
-            button.onclick = function(){
-                deleteItem(this);
-            }
+            nameInput.value = '';
+            ageInput.value = '';
+            courseInput.value = '';
+            emailInput.value = '';
+            document.querySelector('input[name="gender"]:checked').checked = false;
+        });
 
-            li.appendChild(span);
-            li.appendChild(button);
-            listitem.appendChild(li);   
-
-            input.value = '';
-        
-        })
-
-        function deleteItem(button){
+        function deleteItem(button) {
             var li = button.parentElement;
             listitem.removeChild(li);
         }
-
     </script>
 
 </body>
+
 </html>
